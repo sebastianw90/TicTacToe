@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-tac-toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+	<div class="main-container">
+		<!--<span id="headline">tic-tac-toe</span>-->
+		<span id="reset" onclick="resetBut()">reset game</span>
+		<div id="board">
+			
+			<div class="firstRow">
+				<button id="1" class="field row1 col1 diag1 corner"></button>
+				<button id="2" class="field row1 col2 side"></button>
+				<button id="3" class="field row1 col3 diag2 corner"></button>
+			</div>
+			<div class="secondRow">
+				<button id="4" class="field row2 col1 side"></button>
+				<button id="5" class="field row2 col2 diag1 diag2 center"></button>
+				<button id="6" class="field row2 col3 side"></button>
+			</div>
+			<div class="thirdRow">
+				<button id="7" class="field row3 col1 diag2 corner"></button>
+				<button id="8" class="field row3 col2 side"></button>
+				<button id="9" class="field row3 col3 diag1 corner"></button>
+			</div>
+			<!-- start screens -->
+			<div id="chooseSign" class="modal">
+				<div class="modalContent">
+					<span>Choose your destiny</span><br/>
+					<span id="oBut" class="oxButs">O</span>
+					<span id="xBut" class="oxButs">X</span>
+				</div>
+			</div>
+			<div id="chooseDiff" class="modal2">
+				<div class="modalContent2">
+					<span>Choose difficulty</span><br/>
+					<span id="easy" class="diffButs">Easy</span>
+					<span id="hard" class="diffButs">Hard</span>
+				</div>
+			</div>
+			<!-- end of start screens -->
+		</div>
+	</div>
+	<div id="signature">
+		<span><a href="https://www.linkedin.com/in/sebastian-wyrebek/" target="_blank">by SWY</a></span>
+	</div>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
